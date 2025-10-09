@@ -58,7 +58,7 @@ def main():
         result = decode()
     else:
         print("Wrong input.")
- 
+        main()
     print(result)
  
  
