@@ -1,6 +1,11 @@
 def kekse(n):
-    """Gibt einen String mit n Keksen (🍪) zurück."""
-    return '🍪' * n
+    """Gibt einen String mit n Keksen (🍪) und (🍩) zurück."""
+    emojis = ['🍪', '🍩']
+    ergebnis = ""
+
+    for i in range(n):
+        ergebnis += emojis[i % 2]
+    return ergebnis
 
 while True:
     n = input("Wie viele Kekse möchtest du haben? (0 zum Beenden) ")
