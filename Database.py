@@ -9,16 +9,20 @@ class Database:
 
     def insert(self):
         self.__connect()
-        print(f"i will give {self.sql_query} to db")
+        print(f"i will insert {self.sql_query} to db")
 
-    def update(self):
+    def __update(self):
         self.__connect()
-        print(f"i will give {self.sql_query} to db")
+        print(f"i will update {self.sql_query} to db")
 
-    def delete(self):
+    def __delete(self):
         self.__connect()
-        print(f"i will give {self.sql_query} to db")
+        print(f"i will delete {self.sql_query} from db")
 
-    def select(self):
+    def __select(self):
         self.__connect()
-        print(f"i will give {self.sql_query} to db")
+        print(f"i will select {self.sql_query} from db")
+
+    def superUpdate(self):
+        self.__update()
+        print("super update")
